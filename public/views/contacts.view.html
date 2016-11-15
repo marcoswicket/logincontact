@@ -1,0 +1,43 @@
+<h2 class="heading">Contacts<a href="#/contacts/add" class="btn btn-default pull-right">Add New Contact</a></h2>
+
+<div ng-controller="ContactsCtrl">
+	<div class="row">
+		<div class="contacts">
+			<div class="contact-tags">
+							<div class="col-xs-2">
+								<h4><b>Name</b></h4>
+							</div>
+							<div class="col-xs-2">
+								<h4><b>Login</b></h4>
+							</div>
+							<div class="col-xs-2">
+								<h4><b>Email</b></h4>
+							</div>
+							<div class="col-xs-2">
+								
+							</div>	
+						</div>
+					</div>
+			<div ng-repeat="contact in contacts">
+				<div class="row">
+						<div class="contact">
+							<div class="col-xs-2">
+								<h4>{{contact.name}}</h4>
+							</div>
+							<div class="col-xs-2">
+								<h4>{{contact.login}}</h4>
+							</div>
+							<div class="col-xs-2">
+								<h4>{{contact.email}}</h4>
+							</div>
+							<div class="col-xs-2 pull-right">
+								<a href="#/contacts/edit/{{contact._id}}" class="btn btn-default">Edit</a>
+								<a href="#" class="btn btn-danger" ng-click="removeContact(contact)">Remove</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>

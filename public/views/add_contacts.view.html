@@ -1,0 +1,27 @@
+<div ng-controller="ContactCreateCtrl">
+	<h3>Add New Contact</h3>
+	<form ng-submit="addContact()">
+		<div class="form-group">
+			<label>Contact Login</label>
+			<input type="text" class="form-control" ng-model="login" name="login" placeholder="Enter Login">
+		</div>
+		<div class="form-group">
+			<label>Contact Password</label>
+			<input type="password" class="form-control" ng-model="password" name="password" placeholder="Enter password">
+		</div>
+		<div class="form-group">
+			<label>Contact Name</label>
+			<input type="text" class="form-control" ng-model="name" name="name" placeholder="Enter Name">
+		</div>
+		<div class="form-group">
+			<label>Contact Email</label>
+			<input type="text" class="form-control" ng-model="email" name="email" placeholder="Enter Email">
+		</div>
+		<div class="form-group">
+			<label>Contact Telephone</label>
+			<input type="number" class="form-control" ng-model="telephone" name="telephone" placeholder="Enter Telephone Number">
+		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
+		<a class="btn btn-danger" href="/#/contacts">Cancel</a>
+	</form>
+</div>

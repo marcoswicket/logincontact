@@ -1,0 +1,44 @@
+footer {
+	background: #333;
+	color: #fff;
+	height: 40px;
+	padding-top: 10px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.heading {
+	background: #666;
+	color: #fff;
+	padding: 5px;
+}
+
+.contact{
+	border-bottom: #ccc solid 1px;
+	padding-left: 20px;
+	padding-top: 5px;
+	overflow: auto;
+}
+
+.contact-tags{
+	border-bottom: #ccc solid 1px;
+	padding-left: 15px;
+	padding-top: 0px;
+	overflow: auto;
+}
+
+.col-half-offset{
+    margin-left:4.166666667%
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.password {
+	padding: 5px;
+}
